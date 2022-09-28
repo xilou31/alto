@@ -1,0 +1,7 @@
+{{#get "posts" limit="1" include="tags,authors" filter="featured:true"}}
+   {{#foreach posts visibility="all"}}
+      {{> "post-card"}}
+   {{/foreach}}
+
+{{/get}}
+
